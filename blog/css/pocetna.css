@@ -1,0 +1,305 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.stranica {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+.logo {
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+
+}
+
+.logo img {
+    width: 30vw;
+    height: 30vh;
+}
+
+.meni {
+    display: flex;
+    background-color: #c98860;
+    border-bottom: 0.15em solid #9b6b43;
+    justify-content: center;
+}
+
+.meni a {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.8vh 1.8vw;
+    background-color: #fdd195;
+    margin: 1.33vh 0.65vw;
+    border-radius: 1em;
+    flex-grow: 1;
+}
+
+.meni a.active,
+.meni a:hover {
+    background-color: #9b6b43;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.meni-prilagodjen {
+    background-color: #c98860;
+    border-bottom: 2px solid #9b6b43;
+    color: #fdd195;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#meni-cekboks {
+    display: none;
+}
+
+.meni-prilagodjen label {
+    background-color: #fdd195;
+    height: 45px;
+    width: 50px;
+    color: #C9886099;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meni-prilagodjen label span {
+    background-color: #8f614499;
+    height: 3px;
+    width: 70%;
+    margin: 4px 0px;
+}
+
+.meni-prilagodjen {
+    display: none;
+}
+
+.okvir {
+    height: auto;
+    margin-top: 0vh;
+    background-image: linear-gradient(#c98860, #fdd195, #c98860);
+}
+
+#glavnideo {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../slike/glavnaslika.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+#glavnideo-tekst {
+    margin-top: 13.26vh;
+    margin-left: 6.5vw;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    float: left;
+    background-color: #c9886099;
+    border: 2px solid white;
+}
+
+#dobrodoslica {
+    font-size: 23px;
+    font-style: italic;
+    font-display: block;
+    /*height: 40%;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #fdd195;
+    text-align: center;
+}
+
+.drugideo {
+    background-color: #c98860;
+    height: 100vh;
+    display: flex;
+}
+
+#prijava {
+    padding-top: 3vh;
+    background-color: #C9886099;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    flex: 1;
+
+}
+
+#pismo {
+    width: 100%;
+    height: auto;
+    max-width: 10vw;
+}
+
+#svet1,
+#svet2 {
+    padding-top: 200px;
+    width: 20vw;
+    height: 50vh;
+    flex: 1;
+}
+
+#email {
+    width: 90%;
+    height: 4vh;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+}
+
+#ime {
+    width: 90%;
+    height: 4vh;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+}
+
+#prezime {
+    width: 90%;
+    height: 4vh;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+}
+
+#komentari {
+    width: 90%;
+}
+
+form .dugme {
+    border-radius: 5%;
+    background-color: #fdd195;
+    border: none;
+    padding: 0.53vh 0.26vw;
+    cursor: pointer;
+}
+
+.futer-okvir {
+    display: flex;
+    border-top: 3px solid #9b6b43;
+    background-color: #C98860;
+    padding-top: 2.65vh;
+    margin-top: auto;
+
+}
+
+#kontakt {
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 1.33vh;
+
+}
+
+#drustvene-mreze {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#linkovi {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#drustvene-mreze-ikonice {
+    margin-top: 2.65vh;
+}
+
+#drustvene-mreze-ikonice a {
+    text-decoration: none;
+}
+
+#drustvene-mreze-ikonice a img {
+    width: 100%;
+    height: auto;
+    max-width: 24px;
+    margin: 0.4vh 0.2vw;
+    border-radius: 25%;
+
+}
+
+#drustvene-mreze p {
+    align-content: flex-end;
+    padding-top: 5.96vh;
+}
+
+#linkovi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0625em;
+}
+
+.link {
+    padding: 0.66vh 0.325vw;
+}
+
+#linkovi a:hover {
+    color: #fdd195;
+}
+
+@media screen and (max-width:769px) {
+    .logo {
+        display: none;
+    }
+
+    .meni {
+        flex-direction: column;
+        display: none;
+    }
+
+    .meni a {
+        font-size: 10px;
+    }
+
+    #meni-cekboks:checked+.meni {
+        display: flex;
+    }
+
+    .meni-prilagodjen {
+        display: flex;
+    }
+
+    #glavnideo-tekst {
+        height: auto;
+    }
+
+    #dobrodoslica {
+        font-size: 15px;
+    }
+
+    #email,
+    #ime,
+    #prezime {
+        display: inline-block;
+    }
+
+    #prijava {
+        font-size: 15px;
+    }
+
+    #svet1,
+    #svet2 {
+        display: none;
+    }
+
+    .futer-okvir {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,290 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.stranica {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+.logo {
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+
+}
+
+.logo img {
+    width: 30vw;
+    height: 30vh;
+}
+
+.meni {
+    display: flex;
+    background-color: #c98860;
+    border-bottom: 0.15em solid #9b6b43;
+    justify-content: center;
+}
+
+.meni a {
+    color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.8vh 1.8vw;
+    background-color: #fdd195;
+    margin: 1.33vh 0.65vw;
+    border-radius: 1em;
+    flex-grow: 1;
+}
+
+.meni a.active,
+.meni a:hover {
+    background-color: #9b6b43;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#meni-cekboks {
+    display: none;
+}
+
+.meni-prilagodjen {
+    background-color: #c98860;
+    border-bottom: 2px solid #9b6b43;
+    color: #fdd195;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.meni-prilagodjen label {
+    background-color: #fdd195;
+    height: 45px;
+    width: 50px;
+    color: #C9886099;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meni-prilagodjen label span {
+    background-color: #8f614499;
+    height: 3px;
+    width: 70%;
+    margin: 4px 0px;
+}
+
+.meni-prilagodjen {
+    display: none;
+}
+
+.okvir {
+    height: auto;
+    margin-top: 0vh;
+    background-image: linear-gradient(#c98860, #fdd195, #c98860);
+}
+
+#blog-matrica {
+    display: grid;
+    grid-template: "a b"
+        "c d";
+    width: 80vw;
+    height: auto;
+    margin: 0vh 3vw;
+    padding-top: 3%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#blog-matrica-1 {
+    display: grid;
+    grid-template: "e f"
+        "g h";
+    width: 80vw;
+    height: auto;
+    margin: 0vh 3vw;
+    padding-bottom: 1%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+
+#blog-prvi {
+    grid-area: a;
+}
+
+#blog-drugi {
+    grid-area: b;
+}
+
+#blog-treci {
+    grid-area: c;
+}
+
+#blog-cetvrti {
+    grid-area: d;
+}
+
+#blog-peti {
+    grid-area: e;
+}
+
+#blog-sesti {
+    grid-area: f;
+}
+
+#blog-sedmi {
+    grid-area: g;
+}
+
+#blog-osmi {
+    grid-area: h;
+}
+
+.blog-slika-tekst {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2.75vh 0vw;
+}
+
+.blog-slika {
+    flex: 50%;
+}
+
+.blog-tekst {
+    flex: 50%;
+    padding: 1.982vh 0.976vw;
+    color: #775131;
+    font-size: 1.07vw;
+}
+
+.blog-slika-tekst img {
+    width: 100%;
+    height: auto;
+    max-width: 240px;
+
+}
+
+.blog-tekst h3 {
+    padding-top: 0vh;
+    margin-top: 0vh;
+}
+
+.futer-okvir {
+    display: flex;
+    border-top: 3px solid #9b6b43;
+    background-color: #C98860;
+    padding-top: 2.65vh;
+    margin: auto;
+}
+
+#kontakt {
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 1.33vh;
+
+}
+
+#drustvene-mreze {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#linkovi {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#drustvene-mreze-ikonice {
+    margin-top: 2.65vh;
+}
+
+#drustvene-mreze-ikonice a {
+    text-decoration: none;
+}
+
+#drustvene-mreze-ikonice a img {
+    width: 100%;
+    height: auto;
+    max-width: 24px;
+    margin: 0.4vh 0.2vw;
+    border-radius: 25%;
+
+}
+
+#drustvene-mreze p {
+    align-content: flex-end;
+    padding-top: 5.96vh;
+}
+
+#linkovi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0625em;
+}
+
+.link {
+    padding: 0.66vh 0.325vw;
+}
+
+#linkovi a:hover {
+    color: #fdd195;
+}
+
+@media screen and (max-width:769px) {
+    .logo {
+        display: none;
+    }
+
+    .meni {
+        flex-direction: column;
+        display: none;
+    }
+
+    .meni a {
+        font-size: 10px;
+    }
+
+    #meni-cekboks:checked+.meni {
+        display: flex;
+    }
+
+    .meni-prilagodjen {
+        display: flex;
+    }
+
+    #blog-matrica {
+        grid-template: "a"
+            "b"
+            "c"
+            "d";
+    }
+
+    #blog-matrica-1 {
+        grid-template: "e"
+            "f"
+            "g""h";
+    }
+
+    .blog-tekst {
+        font-size: 10px;
+    }
+
+    .blog-slika-tekst img {
+        width: 80%;
+    }
+
+    .futer-okvir {
+        font-size: 10px;
+    }
+}

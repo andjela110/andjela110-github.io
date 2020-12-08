@@ -1,0 +1,362 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.stranica {
+    width: 90vw;
+    margin: 0px auto;
+}
+
+.logo {
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+
+}
+
+.logo img {
+    width: 30vw;
+    height: 30vh;
+}
+
+
+.meni {
+    display: flex;
+    background-color: #c98860;
+    border-bottom: 0.15em solid #9b6b43;
+    justify-content: center;
+}
+
+.meni a {
+    color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.8vh 1.8vw;
+    background-color: #fdd195;
+    margin: 1.33vh 0.65vw;
+    border-radius: 1em;
+    flex-grow: 1;
+}
+
+.meni a.active,
+.meni a:hover {
+    background-color: #9b6b43;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#meni-cekboks {
+    display: none;
+}
+
+.meni-prilagodjen {
+    background-color: #c98860;
+    border-bottom: 2px solid #9b6b43;
+    color: #fdd195;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.meni-prilagodjen label {
+    background-color: #fdd195;
+    height: 45px;
+    width: 50px;
+    color: #C9886099;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meni-prilagodjen label span {
+    background-color: #8f614499;
+    height: 3px;
+    width: 70%;
+    margin: 4px 0px;
+}
+
+.meni-prilagodjen {
+    display: none;
+}
+
+
+.okvir {
+    height: auto;
+    margin-top: 0vh;
+    background-image: linear-gradient(#c98860, #fdd195, #c98860);
+}
+
+#onama-slika-citat {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../slike/automobil.jpg);
+    background-attachment: local;
+    background-position: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+#drzac-1 {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 0vh;
+    padding: 12.2vh 6vw;
+}
+
+#drzac-2 {
+    width: 45%;
+    height: 45%;
+    border: 0.12em solid white;
+    margin-top: 150px;
+    margin-left: 250px;
+    background-color: #C9886099;
+}
+
+#drzac-3 {
+    width: 80%;
+    height: 80%;
+    border: 0.12em solid white;
+    margin: 30px;
+    padding: 30px;
+    background-color: #C9886099;
+}
+
+#onama-onama-1 {
+    display: grid;
+    grid-template: "a b c"
+        "d e e";
+    width: 90vw;
+    height: auto;
+    grid-template-rows: 70vh 1fr;
+    grid-template-columns: 35vw 40vw 1fr;
+    color: #775131;
+    font-size: 27px;
+}
+
+#onama-tekst {
+    grid-area: a;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#onama-slika {
+    grid-area: b;
+}
+
+#onama-destinacije {
+    grid-area: c;
+}
+
+#onama-datum {
+    grid-area: d;
+    text-align: center;
+    font-weight: bold;
+}
+
+#onama-destinacije ul li {
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#onama-destinacije ul {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#onama-destinacije ul li:hover {
+    color: #c98860;
+}
+
+#tekst {
+    font-size: 23px;
+}
+
+#dugme {
+    background-color: #fdd195;
+    color: #775131;
+    padding: 8px;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#onama-posecene-destinacije {
+    grid-area: e;
+    display: flex;
+    height: auto;
+}
+
+#onama-slika img {
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+}
+
+.zemlje,
+.kontinenti,
+.letovi {
+    flex-grow: 1;
+    background-color: #C98860;
+    width: 5vw;
+    height: 11vh;
+    text-align: center;
+    display: inline-block;
+    font-size: 2vw;
+    margin-right: 30px;
+}
+
+.futer-okvir {
+    display: flex;
+    border-top: 3px solid #9b6b43;
+    background-color: #C98860;
+    padding-top: 2.65vh;
+    margin-top: auto;
+
+}
+
+#kontakt {
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 1.33vh;
+
+}
+
+#drustvene-mreze {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#linkovi {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#drustvene-mreze-ikonice {
+    margin-top: 2.65vh;
+}
+
+#drustvene-mreze-ikonice a {
+    text-decoration: none;
+}
+
+#drustvene-mreze-ikonice a img {
+    width: 100%;
+    height: auto;
+    max-width: 24px;
+    margin: 0.4vh 0.2vw;
+    border-radius: 25%;
+
+}
+
+#drustvene-mreze p {
+    align-content: flex-end;
+    padding-top: 5.96vh;
+}
+
+#linkovi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0625em;
+}
+
+.link {
+    padding: 0.66vh 0.325vw;
+}
+
+#linkovi a:hover {
+    color: #fdd195;
+}
+
+@media screen and (max-width:769px) {
+    .logo {
+        display: none;
+    }
+
+    .meni {
+        flex-direction: column;
+        display: none;
+    }
+
+    .meni a {
+        font-size: 10px;
+    }
+
+    #meni-cekboks:checked+.meni {
+        display: flex;
+    }
+
+    .meni-prilagodjen {
+        display: flex;
+    }
+
+    #onama-slika-citat {
+        font-size: 17px;
+    }
+
+    #drzac-2 {
+        width: 45%;
+        height: auto;
+        border: 0.12em solid white;
+        margin-top: 60px;
+        margin-left: 100px;
+        background-color: #C9886099;
+    }
+
+    #drzac-3 {
+        width: 80%;
+        height: 80%;
+        border: 0.12em solid white;
+        margin: 10px;
+        padding: 10px;
+        background-color: #C9886099;
+    }
+
+    #onama-onama-1 {
+        display: grid;
+        grid-template: "a a"
+            "b c"
+            "d e ";
+        grid-template-rows: 30vh 40vh 1fr;
+        grid-template-columns: 50vw 1fr;
+        color: #775131;
+        font-size: 14px;
+    }
+
+    #onama-tekst {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+
+    #tekst,
+    #dugme {
+        font-size: 10px;
+    }
+
+    .zemlje,
+    .kontinenti,
+    .letovi {
+        width: 9vw;
+        height: 7vh;
+    }
+
+    .futer-okvir {
+        font-size: 10px;
+    }
+}

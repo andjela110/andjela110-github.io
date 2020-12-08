@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/pocetna.css">
+    <title>M&A blog</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="pocetna" class="stranica">
+    <div id="heder">
+        <div class="logo-i-meni">
+            <div class="logo">
+                <img src="slike/no1.jpg" alt="Učitavanje..." >
+                <img src="slike/logonovi.jpg" alt="Učitavanje...">
+                <img src="slike/no2.jpg" alt="Učitavanje...">
+            </div>
+            <div>
+            <div class="meni-prilagodjen">
+                <label for="meni-cekboks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <input type="checkbox" id="meni-cekboks">
+            <div class="meni">
+                <a href="pocetna.html" class="active">Početna</a>
+                <a href="blog.html">Blog</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="onama.html">O nama</a>
+            </div>
+        </div>
+    </div>
+    <div class="okvir">
+        <div id="glavnideo">
+            <div id="glavnideo-tekst">
+            <div id="dobrodoslica">
+                <h1>Dobrodošli!<br></h1>
+                    <p>Nadamo se da ćete uživati u našim pričama <br> i da ćemo vas inspirisati da putujete sa nama.
+                </p>
+            </div>
+        
+    </div>
+    </div>
+    <div class="drugideo">
+         <img src="slike/po1.jpeg" id="svet1" alt="Učitavanje..">
+    <div id="prijava">
+        <img src="slike/email.jpg" id="pismo" alt="Učitavanje...">
+        <p>Ostavite nam svoj mejl i pratite nas na novim destinacijama!</p>
+        <form>
+            <label for="ime">Ime:</label><br>
+            <input type="text" id="ime" placeholder="Unesite ime" value=""><br>
+            <label for="prezime">Prezime:</label><br>
+            <input type="text" id="prezime" placeholder="Unesite prezime" value=""><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Unesite e-mail" value=""><br>
+            <label for="komentari">Komentar:</label><br>
+            <textarea rows="6" cols="37"  id="komentari" placeholder="Unesite komentar:"></textarea> <br>
+
+            <input type="submit" onclick="validacija();" class="dugme" value="Pošalji">
+            <input type="reset" class="dugme" value="Resetuj formu">
+        </form>
+    </div>
+    <img src="slike/po2.jpeg" id="svet2" alt="Učitavanje..">
+</div>
+    <div class="futer">
+        <div class="futer-okvir">
+        <div id="kontakt">
+            <h3>Kontakt telefon:</h3>
+            <p>+381650311133</p>
+            <h3>Mejl:</h3>
+            <p>mablog@gmail.com</p>
+
+        </div>
+        <div id="drustvene-mreze">
+            <h3>Pratite nas:</h3>
+            <div id="drustvene-mreze-ikonice">
+                <a href="#">
+                    <img src="slike/pinterest1.jpeg" alt="Pinterest">
+                </a>
+                <a href="#">
+                    <img src="slike/fejsbuk1.jpeg" alt="Fejsbuk">
+                </a>
+                <a href="#">
+                    <img src="slike/instagram1.jpeg" alt="Instagram">
+                </a>
+
+            </div>
+            <p>&copy; M&A blog</p>
+                
+        </div>
+        <div id="linkovi">
+            <div class="link"><a href="pocetna.html"><b>Početna</b></a></div>
+            <div class="link"><a href="blog.html"><b>Blog</b></a></div>
+            <div class="link"><a href="destinacije.html"><b>Destinacije</b></a></div>
+            <div class="link"><a href="galerija.html"><b>Galerija</b></a></div>
+            <div class="link"><a href="onama.html"><b>O nama</b></a></div>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="js/script-pocetna.js"></script>
+</body>
+</html>
